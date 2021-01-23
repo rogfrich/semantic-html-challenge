@@ -1,11 +1,88 @@
-/* CSS files add styling rules to your content */
-
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
-}
+/* general styling */
 
 h1 {
   font-style: italic;
   color: #373fff;
+}
+
+/* table styling */
+
+table {
+  border: 2px solid #800080;
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: bottom;
+  text-align: end;
+  padding: 8px;
+  font-family: "Rock Salt", cursive;
+  font-size: 0.5em;
+}
+
+/* header and footer styling */
+
+.header-and-footer {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("/assets/leopardskin.jpg");
+  font-family: "Rock Salt", cursive;
+  font-size: 0.8em;
+  color: white;
+}
+
+.header-and-footer td {
+  padding: 20px;
+  border: 2px solid #800080;
+}
+
+/* set column widths */
+
+thead tr td:nth-child(1) {
+  width: 30%;
+}
+
+thead tr td:nth-child(2) {
+  width: 20%;
+}
+
+thead tr td:nth-child(3) {
+  width: 20%;
+}
+
+thead tr td:nth-child(4) {
+  width: 30%;
+}
+
+/* set the correct alignment for the total album cells */
+
+.justify-right {
+  text-align: end;
+}
+
+.justify-left {
+  text-align: start;
+}
+
+/* body styling */
+
+tbody {
+  font-family: Helvetica;
+}
+
+tbody tr {
+  background-image: url("/assets/noise.png");
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #FF33CC;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e495e4;
+}
+
+.pad-cells-narrow td {
+  padding: 10px;
 }
